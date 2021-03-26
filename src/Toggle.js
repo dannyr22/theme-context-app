@@ -2,7 +2,7 @@ import React from 'react'
 
 const Toggle = () => {
   return (
-    <div>
+    <div className="toggle">
       <button>Toggle Theme</button>
     </div>
   )
