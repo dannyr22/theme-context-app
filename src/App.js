@@ -1,3 +1,4 @@
+import ThemeContextProvider from "./contexts/ThemeContext";
 import HobbieList from "./HobbieList";
 import Nav from "./Nav";
 import Toggle from "./Toggle";
@@ -6,9 +7,11 @@ import Toggle from "./Toggle";
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <HobbieList />
-      <Toggle />
+      <ThemeContextProvider>
+        <Nav />
+        <HobbieList />
+        <Toggle />
+      </ThemeContextProvider>
     </div>
   );
 }
